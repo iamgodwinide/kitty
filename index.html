@@ -9,21 +9,20 @@
   <body>
     <img src="/SITE.png" alt="" class="desktop" usemap="#image-map" />
     <img src="/SITEMOBILE.png" alt="" class="mobile" usemap="#image-map2" />
-
     <map name="image-map">
       <area
-        target=""
+        target="_blank"
         alt="x"
         title="x"
-        href="https://twitter.com"
+        href="#"
         coords="1431,131,1554,241"
         shape="rect"
       />
       <area
-        target="https://t.me/solkittyportal"
+        target="_blank"
         alt="telegram"
         title="telegram"
-        href="https://telegram.com"
+        href="https://t.me/solkittyportal"
         coords="1575,124,1702,248"
         shape="rect"
       />
@@ -31,15 +30,15 @@
 
     <map name="image-map2">
       <area
-        target=""
+        target="_blank"
         alt="x"
         title="x"
-        href="https://twitter.com"
+        href="#"
         coords="671,226,878,410"
         shape="rect"
       />
       <area
-        target=""
+        target="_blank"
         alt="telegram"
         title="telegram"
         href="https://t.me/solkittyportal"
@@ -54,5 +53,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
   </body>
 </html>
